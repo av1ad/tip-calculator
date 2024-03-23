@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-grayish-cyan);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2em 0;
+}
+
+.container {
+    background-color: var(--white);
+    padding: 1em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100vh;
+    margin-top: 1.5em;
+    color: var(--dark-grayish-cyan);
+}
+
+input {
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+    width: 75%;
+    padding: .65em 1em;
+    color: var(--very-dark-cyan);
+    font-weight: bold;
+    font-size: 1em;
+    text-align: right;
+}
+
+.dollar-sign {
+    position: absolute;
+    padding: .25em .5em;
+    font-weight: lighter;
+    font-size: 1.25em;
+    color: var(--grayish-cyan);
+    opacity: .7;
+
+}
+
