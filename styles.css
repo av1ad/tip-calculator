@@ -10,10 +10,12 @@
     --white: hsl(0, 0%, 100%);
 }
 
-body {
-    background-color: var(--light-grayish-cyan);
+* {
     font-family: "Space Mono", monospace;
     font-weight: 700;
+}
+body {
+    background-color: var(--light-grayish-cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +37,7 @@ body {
 input {
     border: none;
     background-color: var(--very-light-grayish-cyan);
-    width: 75%;
+    width: 90%;
     padding: .65em 1em;
     color: var(--very-dark-cyan);
     font-weight: bold;
@@ -51,5 +53,16 @@ input {
     color: var(--grayish-cyan);
     opacity: .7;
 
+}
+
+.tip-btn {
+    border: none;
+    padding: .5em 3em;
+    color: var(--white);
+    background: var(--very-dark-cyan);
+    border-radius: 5px;
+    margin: .3em;
+    font-size: 1em;
+    width: 130px;
 }
 
