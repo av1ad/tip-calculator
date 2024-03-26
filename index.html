@@ -24,6 +24,7 @@
           pattern="^\d*(\.\d{0,2})?$"
           placeholder="0.00"
           required
+          id="bill-input"
         />
       </div>
 
@@ -37,27 +38,26 @@
         <button class="tip-btn">Custom</button>
       </div>
 
-      <p>Number of People</p>
+      <div class="people-container"><p>Number of People<span class="cant-be-zero">Can't be 0</span></p></div>
       <span class="dollar-sign"><img src="./images/icon-person.svg" /></span>
-      <input type="number" min="1" max="10" />
+      <input type="number" min="1" max="10" id="people-input" />
 
       <div class="result">
+        <div class="tip-container">
+          <div class="tip-labels">
+            <p class="result-label">Tip Amount</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <p class="tip-result">$0.00</p>
+        </div>
 
-          <div class="tip-container">
-            <div class="tip-labels">
-              <p class="result-label">Tip Amount</p>
-              <p class="per-person">/ person</p>
-            </div>
-            <p class="tip-result">$0.00</p>
+        <div class="tip-container">
+          <div>
+            <p class="result-label">Total</p>
+            <p class="per-person">/ person</p>
           </div>
-  
-          <div class="tip-container">
-            <div>
-              <p class="result-label">Total</p>
-              <p class="per-person">/ person</p>
-            </div>
-            <p class="tip-result">$0.00</p>
-          </div>
+          <p class="tip-result">$0.00</p>
+        </div>
 
         <button id="reset-btn">Reset</button>
       </div>
