@@ -66,3 +66,7 @@ input {
     width: 130px;
 }
 
+.tip-btn:hover, .tip-btn:active {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
