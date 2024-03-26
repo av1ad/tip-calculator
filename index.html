@@ -13,53 +13,61 @@
     <img src="./images/logo.svg" alt="logo" />
 
     <div class="container">
-      <p>Bill</p>
+      <div class="main">
+        <p>Bill</p>
+        <div>
+          <span class="dollar-sign"
+            ><img src="./images/icon-dollar.svg"
+          /></span>
+          <input
+            type="number"
+            min="1.0"
+            max="5000.00"
+            step=".01"
+            pattern="^\d*(\.\d{0,2})?$"
+            placeholder="0.00"
+            required
+            id="bill-input"
+          />
+        </div>
+
+        <p>Select Tip %</p>
+        <div class="tip-btns">
+          <button class="tip-btn">5%</button>
+          <button class="tip-btn">10%</button>
+          <button class="tip-btn active">15%</button>
+          <button class="tip-btn">25%</button>
+          <button class="tip-btn">50%</button>
+          <button class="tip-btn">Custom</button>
+        </div>
+
+        <div class="people-container">
+          <p>Number of People<span class="cant-be-zero">Can't be 0</span></p>
+        </div>
+        <span class="dollar-sign"><img src="./images/icon-person.svg" /></span>
+        <input type="number" min="1" max="10" id="people-input" />
+      </div>
+
       <div>
-        <span class="dollar-sign"><img src="./images/icon-dollar.svg" /></span>
-        <input
-          type="number"
-          min="1.0"
-          max="5000.00"
-          step=".01"
-          pattern="^\d*(\.\d{0,2})?$"
-          placeholder="0.00"
-          required
-          id="bill-input"
-        />
-      </div>
-
-      <p>Select Tip %</p>
-      <div class="tip-btns">
-        <button class="tip-btn">5%</button>
-        <button class="tip-btn">10%</button>
-        <button class="tip-btn active">15%</button>
-        <button class="tip-btn">25%</button>
-        <button class="tip-btn">50%</button>
-        <button class="tip-btn">Custom</button>
-      </div>
-
-      <div class="people-container"><p>Number of People<span class="cant-be-zero">Can't be 0</span></p></div>
-      <span class="dollar-sign"><img src="./images/icon-person.svg" /></span>
-      <input type="number" min="1" max="10" id="people-input" />
-
-      <div class="result">
-        <div class="tip-container">
-          <div class="tip-labels">
-            <p class="result-label">Tip Amount</p>
-            <p class="per-person">/ person</p>
+        <div class="result">
+          <div class="tip-container">
+            <div class="tip-labels">
+              <p class="result-label">Tip Amount</p>
+              <p class="per-person">/ person</p>
+            </div>
+            <p class="tip-result">$0.00</p>
           </div>
-          <p class="tip-result">$0.00</p>
-        </div>
 
-        <div class="tip-container">
-          <div>
-            <p class="result-label">Total</p>
-            <p class="per-person">/ person</p>
+          <div class="tip-container">
+            <div>
+              <p class="result-label">Total</p>
+              <p class="per-person">/ person</p>
+            </div>
+            <p class="tip-result">$0.00</p>
           </div>
-          <p class="tip-result">$0.00</p>
-        </div>
 
-        <button id="reset-btn">Reset</button>
+          <button id="reset-btn">Reset</button>
+        </div>
       </div>
     </div>
   </body>

@@ -1,5 +1,7 @@
+/* Import Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* Define CSS Variables */
 :root {
   --strong-cyan: hsl(172, 67%, 45%);
   --very-dark-cyan: hsl(183, 100%, 15%);
@@ -10,10 +12,12 @@
   --white: hsl(0, 0%, 100%);
 }
 
+/* Global Styles */
 * {
   font-family: "Space Mono", monospace;
   font-weight: 700;
 }
+
 body {
   background-color: var(--light-grayish-cyan);
   display: flex;
@@ -24,6 +28,7 @@ body {
   margin: 2em 0 0;
 }
 
+/* Container Styles */
 .container {
   background-color: var(--white);
   padding: 1em;
@@ -34,6 +39,7 @@ body {
   color: var(--dark-grayish-cyan);
 }
 
+/* Input Styles */
 input {
   border: none;
   background-color: var(--very-light-grayish-cyan);
@@ -55,6 +61,7 @@ input {
   opacity: 0.7;
 }
 
+/* Tip Button Styles */
 .tip-btn {
   border: none;
   padding: 0.5em 3em;
@@ -74,6 +81,7 @@ input {
   color: var(--very-dark-cyan);
 }
 
+/* Result Styles */
 .result {
   background-color: var(--very-dark-cyan);
   color: var(--very-light-grayish-cyan);
@@ -121,18 +129,43 @@ input {
   margin: 0;
 }
 
-
+/* People Container Styles */
 .people-container p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.people-container p span {
-    display: none;
-    color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#people-input {
-    /* border: 2px solid lightcoral; */
-    
+.people-container p span {
+  display: none;
+  color: lightcoral;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .main {
+        width: 50%;;
+    }
+    .result {
+        padding: 2em;
+        margin: 1em;
+        width: 95%;
+        height: 80%;
+    }
+    .container {
+        display: flex;
+        width: 700px;
+        height: 50vh;
+        border-radius: 10px;
+    }
+    .tip-btn {
+        width: 45%;
+    }
+    #reset-btn {
+        position: relative;
+        top: 20%;
+    }
 }
