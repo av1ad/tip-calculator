@@ -152,12 +152,12 @@ input {
     .result {
         padding: 2em;
         margin: 1em;
-        width: 95%;
+        width: 90%;
         height: 80%;
     }
     .container {
         display: flex;
-        width: 700px;
+        width: 90%;
         height: 50vh;
         border-radius: 10px;
     }
